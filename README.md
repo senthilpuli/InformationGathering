@@ -1,4 +1,7 @@
 # InformationGathering
+Information Gathering Techiques
+
+# To perform information gathering techniques
 
 # AIM:
 
@@ -17,64 +20,66 @@ Investigate on the various categories of tools as follows:
 ### Step 3:
 Open terminal/browser and try execute necessary commands/use url to perform information gathering
 
-<<<<<<< HEAD
-### Pen Test Tools Categories:  
 
-Following Categories of pen test tools are identified for information gathering:
+# OUTPUT:
+## WHOIS:
+![Screenshot 2024-04-16 084732](https://github.com/RISHIKEERTHI14605/InformationGathering/assets/147148903/ec0efe7e-6370-4d2c-808a-a5df2274eccb)
+## WEB ARCHEIVE:
+![Screenshot 2024-04-16 085219](https://github.com/RISHIKEERTHI14605/InformationGathering/assets/147148903/3f1263ce-05f6-4fc2-bbb8-6f183a3ac166)
+## IP2 LOCATION:
+![Screenshot 2024-04-16 085929](https://github.com/RISHIKEERTHI14605/InformationGathering/assets/147148903/f2e58000-ee5c-4a12-9331-aa43b13c704e)
+## OUTPUT
+![image](https://github.com/RISHIKEERTHI14605/InformationGathering/assets/147148903/65bfb899-8cb4-4a06-92a5-cdbdc731c6f2)
+## nmap:
+```
+nmap -p 21 -sV --script=banner ftp.vim.org
+```
+# OUTPUT
+![2](https://github.com/Rajkiran0604/InformationGathering/assets/164345543/cc41e9fd-3960-4902-8c55-173c654bd424)
+## Whatweb:
+```
+whatweb infosys.com
+```
+```
+whatweb zoho.com
+```
+```
+whatweb -v -a 3 172.17.52.201
 
-Footprinting is a part of the reconnaissance process which is used for gathering possible information about a target computer system or network.
-http://www.whois.com/whois website to get detailed information about a domain name information including its owner, its registrar, date of registration, expiry, name server, owner's contact information, etc.
-
-### output
-![1](/im/whois.png)
-
-#### Finding IP address:
-ping command is available on Windows as well as on Linux OS. Following is the example to find out the IP address of facebook.com.
-![ping](im/kali.png)
-
-#### ip2location.com :
-Finding Hosting Company
-get further detail by using ip2location.com website.
-![ip2](https://github.com/Manoj162004/InformationGathering/assets/120365042/619062b3-411f-4a14-b949-d60ad9b95b41)
-
-
-#### History of the website:
-https://web.archive.org/
-
-![![webarchive](https://github.com/Manoj162004/InformationGathering/assets/120365042/30205ff8-2bae-4392-99c0-b430e96122c2)
-
-3](/im/webarcive.png)
-
-#### Webserver Fingerprinting:
-
-#### Netcat:
-![4](/im/netcat.png)
-
- 
-#### nmap:
-![5](/im/nmap.png)
-
-#### Whatweb:
-
-![6](/im/whatweb.png)
-
-#### httprint
-
-![7](/im/httprint.png)
-
-### Tracing the Location
-#### TCP Traceroute:
-![tcptreceroute](https://github.com/Manoj162004/InformationGathering/assets/120365042/2f16c873-8fdd-44ce-82f7-c043389404de)
-
-#### UDP Traceroute:
-
-![udptraceroute](https://github.com/Manoj162004/InformationGathering/assets/120365042/48f6f804-3c6a-43c9-8d10-6eafd666a9d1)
-
-
-#### ICMP Traceroute:
-
-![10](/im/icmptraceroute.png)
+```
+# OUTPUT
+![3](https://github.com/Rajkiran0604/InformationGathering/assets/164345543/287ba05b-6206-4340-9a81-0dbe50f4b0df)
+## httprint:
+```
+httprint -h 172.17.52.201 -s /usr/share/httprint/signatures.txt -P0 |more
+```
+# OUTPUT
+![4](https://github.com/Rajkiran0604/InformationGathering/assets/164345543/61acedb1-8109-49d9-b23e-d027b5a3edd1)
+## Tracing the Location:
+```
+sudo traceroute -T www.saveetha.ac.in
+```
+# OUTPUT
+![5](https://github.com/Rajkiran0604/InformationGathering/assets/164345543/161b5f9d-0a95-4e0d-9ba8-62303fcba8a3)
+## UDP Traceroute:
+```
+sudo traceroute -U www.saveetha.ac.in
+```
+# OUTPUT
+![6](https://github.com/Rajkiran0604/InformationGathering/assets/164345543/daa6dc36-c180-44ec-b3e8-ee0b08ca0e01)
+## ICMP Traceroute:
+```
+sudo traceroute  www.saveetha.ac.in
+```
+# OUTPUT
+![7](https://github.com/Rajkiran0604/InformationGathering/assets/164345543/0540700c-aec8-4e89-9b55-9b9dac8d8f26)
 
 
-### RESULT:
+
+
+
+
+
+
+## RESULT:
 The information gathering techniques tools/procedure were  identified successfully
